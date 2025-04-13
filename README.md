@@ -16,12 +16,12 @@ Projeto criado e testado localmente usando PyCharm (Python 3.12).
 
 ## Funcionalidades
 
-- Cadastro de e-mail e username (nome de usuário)
+- Cadastro de e-mail e username (com nome de usuário)
 - Senhas encriptadas
 - Postagem de imagens
 - Feeds das imagens
 - Imagens ligadas ao perfil do usuário
 
 ## Objetivo
-O objetivo principal deste projeto é demonstrar as habilidades adquiridas no curso Hashtag Treinamentos, aplicando técnicas de desenvolvimento e evidenciando minha vontade de aprender e me desenvolver continuamente.
+O objetivo principal deste projeto é demonstrar as habilidades adquiridas no curso Hashtag Treinamentos, aplicando técnicas de desenvolvimento e evidenciando minha vontade de aprender e me desenvolver continuamente. 
 
