@@ -17,10 +17,11 @@ Projeto criado e testado localmente usando PyCharm (Python 3.12).
 ## Funcionalidades
 
 - Cadastro de e-mail e username (com nome de usuário)
-- Senhas encriptadas
+- Senhas encriptadas -> Segurança para o usuário.
 - Postagem de imagens
-- Feeds das imagens
-- Imagens ligadas ao perfil do usuário
+- Feeds das imagens -> Visão de todas as fotos do site
+- Imagens ligadas ao perfil do usuário -> Visão do perfil de quem postou a foto.
+- Criação de pasta por ID de cada usuário -> Organização das imagens por perfil.
 
 ## Objetivo
 O objetivo principal deste projeto é demonstrar as habilidades adquiridas no curso Hashtag Treinamentos, aplicando técnicas de desenvolvimento e evidenciando minha vontade de aprender e me desenvolver continuamente. 
