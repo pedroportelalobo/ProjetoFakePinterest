@@ -32,13 +32,13 @@ Perfil - {{ usuario.username }}
 {% endif %}
 
 <div class="conteudo">
-{% for foto in usuario.fotos %}
-    <div class="bloco-imagem">
-        <img src="{{ url_for('static', filename='fotos_posts/{}'.format(foto.imagem)) }}" />
-    </div>
-
-{% endfor %}
+    {% for foto in usuario.fotos %}
+        <div class="bloco-imagem">
+            <img src="{{ url_for('static', filename='fotos_posts/' ~ foto.id_usuario ~ '/' ~ foto.imagem) }}" />
+        </div>
+    {% endfor %}
 </div>
+
     <script>
   document.getElementById("foto").addEventListener("change", () => {
     let imagemArquivo = document.getElementById("imagem-arquivo");
