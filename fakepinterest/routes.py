@@ -41,12 +41,18 @@ def perfil(id_usuario):
         if form_foto.validate_on_submit():
             arquivo = form_foto.foto.data
             nome_seguro = secure_filename(arquivo.filename)
-            caminho = os.path.join(os.path.abspath(os.path.dirname(__file__)),
-                              app.config["UPLOAD_FOLDER"], nome_seguro)
+            pasta_usuario = os.path.join(app.config["UPLOAD_FOLDER"], str(current_user.id))
+
+            if not os.path.exists(pasta_usuario):
+                os.makedirs(pasta_usuario)
+
+            caminho = os.path.join(pasta_usuario, nome_seguro)
             arquivo.save(caminho)
             foto = Foto(imagem=nome_seguro, id_usuario=current_user.id)
             database.session.add(foto)
             database.session.commit()
+
+            return render_template("perfil.html", usuario=current_user, form=form_foto)
 
         return render_template("perfil.html", usuario=current_user, form=form_foto)
     else:
